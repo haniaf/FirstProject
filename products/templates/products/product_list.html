@@ -1,0 +1,9 @@
+
+{% extends "base.html" %}
+{% block content %}
+{% for x in my_list %}
+    <ul>{{ x.id }} - {{ x.title }}</ul>
+
+{% endfor %}
+
+{% endblock %}

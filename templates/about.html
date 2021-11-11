@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>about page</h1>
+
+<p>This is a template</p>
+
+<p>
+    {{ my_text|title }} //
+    {{my_number }} //
+
+</p>
+<ol>
+    {% for one_item in my_list %}
+        {% if one_item == 'd' %}
+            <li>{{ one_item|add:'a' }}</li>
+        {% elif one_item == 'd' %}
+            <li>{{ one_item|add:'b' }}</li>
+        {% else %}
+            <li>{{ one_item }}</li>
+
+        {% endif %}
+
+    {% endfor %}
+</ol>
+
+{% endblock %}
+
